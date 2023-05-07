@@ -1,0 +1,28 @@
+
+ .quiz .fundo_form img{
+    opacity: 0.3;
+    margin-left: 285px;   
+    position: static;
+}
+
+.quiz h1{
+    position: absolute;
+    margin-top:-650px;
+    margin-left: 644px;
+    font-size: 42px;
+}
+
+.quiz button{
+  background-color: #732689;
+  width: 135px;
+  height: 40px;
+  border-radius: 18px;
+  border: none;
+  font-size: 25px;
+  color: white;
+  margin-top:-200px;
+  position: absolute;
+  margin-left: 542px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}

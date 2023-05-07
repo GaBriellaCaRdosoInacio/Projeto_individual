@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto +Mono:wght@300 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #eccbf6;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* header */
+
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  height: 120px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.header .logo #logo1{
+    width:100%;
+    height:95px;
+    display: flex;
+    margin-top: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .texto{
+  margin-left: 750px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header .menu #menu{
+  width: 60px;
+  height: 60px;
+}
+
+.menu_resp{
+  background-color: #A138BF; 
+  margin-left: 1141px;
+  top: 120px; 
+  width: 200px; 
+  height: 220px;
+  float: none;
+  font-weight: bold;
+  position: absolute;
+}
+
+li{
+  font-size: 22px;
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  line-height: 42px;
+}
+
+/* fim do header */
+
+/* inicio do banner */
+
+.banner{
+  display: flex;
+  width: 500px;
+  height:400px ;
+  background: white; 
+  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 150px;
+  border-radius: 25px;
+  position:static;
+  
+} 
+
+
+.atalho_quiz ul li{
+  list-style: none;
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+  line-height: 75px;
+}
+
+.atalho_quiz h1{
+  margin-top: 30px;
+  width: 480px;
+  
+}
+
+.atalho_quiz span {
+  margin-top: 15px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #292828;
+}
+
+.atalho_quiz button{
+  background-color: #A138BF;
+  width: 110px;
+  height: 38px;
+  border-radius: 20px;
+  border: none;
+  font-size: 21px;
+}
+
+.atalho_quiz button a{
+  color: white;
+}
+
+
+.xaveco_img .fundo_roxo{
+  height:200px;
+  width: auto; 
+  float: right;
+  display: flex;
+  margin-right: 25px;
+  justify-items: center;
+  align-items: end;
+  margin-top: -140px;
+}
+
+
+.xaveco_img .xaveco{
+  height:140px;
+  width: auto; 
+  float: right;
+  display: flex;
+  margin-left: 820px;
+  justify-items: center;
+  align-items: end;
+  align-items: flex-end;
+  position: absolute;
+  margin-top: -180px;
+}
+
+
+
+.xaveco img{
+  height: 300px;
+  width: auto;
+}
+
+.card{
+  margin-top: 100px;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+  height: 650px;
+}
+
+.tracejado{
+  margin-left: 50px;
+  position: static;
+  width: auto; 
+  float: left;
+  display: flex;
+  justify-items: center;
+
+}
+
+.balao{
+  width: auto;
+  margin-top: 100px;
+  margin-left: 480px;
+  float: right;
+  position: absolute;
+  align-items: flex-end;
+}
+
+.balao img{
+  height: 400px;
+}
+
+.card span{
+  color: white;
+  font-size: 23px;
+  margin-top: 220px;
+  margin-left: 65px;
+  float: right;
+  line-height: 40px;
+  text-align: justify;
+  word-spacing: 11px;
+  width: 550px;
+  font-family: 'Roboto Mono', monospace;
+  position: absolute;
+}
+
+.esconder {
+  background-color: white;
+  width: 110px;
+  height:58px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 780px;
+  float: right;
+}
+
+/* inicio do footer */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A138BF;
+  height: 90%;
+  width: 100%;
+}
+
+.footer .logo2 img{
+  width: auto;
+  height: 350px;
+  margin-left: 80px;
+}
+
+.footer .retrato img{
+  margin-left: -300px;
+  height: 200px;
+  width: auto;
+  border-radius: 35px;
+  position: absolute;
+  margin-top: -100px;
+  cursor: pointer;
+}
+
+ul .list-footer{
+  font-size: 22px;
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  line-height: 42px;
+  margin-top: -50px;
+  position: relative;
+}

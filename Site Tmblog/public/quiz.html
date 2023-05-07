@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz - tmblog</title>
+    <link rel="stylesheet" href="../Css/style_geral.css">
+    <link rel="stylesheet" href="../Css/style_quiz.css">
+
+</head>
+<body>
+    
+    <!-- inicio header -->
+ <div class="header" style="background-color: #D352F8;"> 
+    <div class="container">
+    <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
+    <div class="texto"> Quiz
+    </div>
+    <div class="menu">
+        <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
+    </div>
+    </div> </div>
+    <!-- fim do header -->
+
+    <!-- inicio form quiz -->
+    <div class="quiz">
+        <div class="fundo_form">
+            <img src="../img/fundo-form.png">
+        </div>
+         <h1>QUIZ</h1>
+        <div id="mensagem"></div>
+        <div id="pergunta" class="lista-perguntas"> 1- Você considera sua imaginação fértil?</div>
+        <input id="inpt_sim" type="button" value="a) SIM">
+        <input id="inpt_nao" type="button" value="b) NÃO">
+        <button onclick="proximo()">Próximo</button>
+    </div>
+    <!-- fim do form quiz -->
+
+    <!-- inicio do footer -->
+    <div class="footer">
+        <div class="logo2"><img src="../img/logo2_tmblog.png"></div>
+    <div id="listf"></div>
+    <div class="retrato"> <img onclick="contato()" src="../img/foto_footer.jpg">
+    </div>
+    </div>
+<!-- fim do footer -->
+
+</body>
+</html>
+
+<script>
+
+//variaveis globais 
+var contador= 0;
+
+//funcoes do menu de nav
+function clickmenu() {
+contador+=1
+
+if(contador>0){
+if(contador==1){
+    mensagem.innerHTML= `<ul class="menu_resp"> 
+        <li><a href="https://www.google.com.br/?gws_rd=cr">Cadastro</a></li>
+        <li><a href=" ">Login</a></li>
+        <li><a href="homepage.html"> Home</a></li>
+        <li><a href=" ">Ajuda</a></li>
+        <li><a href=" ">Curiosidade</a></li></ul>
+`
+} else {
+    mensagem.innerHTML= ' ';
+    contador=0
+}
+} 
+} 
+
+//funcao do contato
+function contato() {
+contador+=1
+
+if(contador>0){
+if(contador==1){
+    listf.innerHTML= `<ul class="list-footer">
+                <li><h3>Contato</h3></li>
+                <li><a href=" ">E-mail</a></li>
+                <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
+                <li><a href=" "></a></li>
+                </ul>`
+} else {
+    listf.innerHTML= ' ';
+    contador=0
+}
+} 
+} 
+
+// quiz
+
+pergunta.innerHTML= listaPerg[0]
+
+function proximo(){
+    pergunta.innerHTML= ' ';
+    var listaPerg= ["2- Você se considera uma pessoa que atrai sorte?", "3- Se um amigo seu está com problemas, você tentaria diversas coisas para poder ajuda-lo?", "4- Você tenta ser positivo mediante as dificuldades?", "5- Sua família é caótica?"];
+    contador+=1
+
+if(contador==1){
+    pergunta.innerHTML= listaPerg[0]
+}
+
+else {
+    contador=1;
+    pergunta.innerHTML= listaPerg[0 + contador]
+    contador ++
+} }
+    
+
+</script>
