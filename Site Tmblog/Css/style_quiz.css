@@ -8,7 +8,7 @@
 .quiz h1{
     position: absolute;
     margin-top:-650px;
-    margin-left: 644px;
+    margin-left: 630px;
     font-size: 42px;
 }
 
@@ -20,9 +20,42 @@
   border: none;
   font-size: 25px;
   color: white;
-  margin-top:-200px;
+  margin-top:-280px;
   position: absolute;
-  margin-left: 542px;
+  margin-left: 615px;
   font-family: 'Times New Roman', Times, serif;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+.quiz .lista-perguntas{
+  font-weight: bold;
+  position: absolute;
+  margin-top:-550px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin-left: 500px;
+}
+
+.quiz .inpts {
+  margin-top:-480px;
+  line-height: 20px;
+  position: absolute;
+  margin-left: 530px;
+  width: 300px;
+  border-radius: 30px;
+  border-color: purple;
+  background-color: #dbb6d7;
+  height: 40px;
+}
+
+.quiz .inptn {
+  margin-top:-410px;
+  line-height: 20px;
+  position: absolute;
+  margin-left: 530px;
+  width: 300px;
+  border-radius: 30px;
+  border-color: purple;
+  background-color: #dbb6d7;
+  height: 40px;
 }

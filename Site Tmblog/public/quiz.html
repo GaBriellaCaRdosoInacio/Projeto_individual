@@ -31,8 +31,8 @@
          <h1>QUIZ</h1>
         <div id="mensagem"></div>
         <div id="pergunta" class="lista-perguntas"> 1- Você considera sua imaginação fértil?</div>
-        <input id="inpt_sim" type="button" value="a) SIM">
-        <input id="inpt_nao" type="button" value="b) NÃO">
+        <input class="inpts"id="inpt_sim" type="button" value="a) SIM">
+        <input class= "inptn" id="inpt_nao" type="button" value="b) NÃO">
         <button onclick="proximo()">Próximo</button>
     </div>
     <!-- fim do form quiz -->
@@ -82,7 +82,7 @@ if(contador>0){
 if(contador==1){
     listf.innerHTML= `<ul class="list-footer">
                 <li><h3>Contato</h3></li>
-                <li><a href=" ">E-mail</a></li>
+                <li><a href="gabriella.inacio@sptech.school">E-mail</a></li>
                 <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
                 <li><a href=" "></a></li>
                 </ul>`
@@ -95,22 +95,31 @@ if(contador==1){
 
 // quiz
 
-pergunta.innerHTML= listaPerg[0]
 
 function proximo(){
     pergunta.innerHTML= ' ';
     var listaPerg= ["2- Você se considera uma pessoa que atrai sorte?", "3- Se um amigo seu está com problemas, você tentaria diversas coisas para poder ajuda-lo?", "4- Você tenta ser positivo mediante as dificuldades?", "5- Sua família é caótica?"];
     contador+=1
 
-if(contador==1){
-    pergunta.innerHTML= listaPerg[0]
+
+for( ; contador==1; contador++){
+    if(contador==1){
+    pergunta.innerHTML= listaPerg[listaPerg[0]];
+   
+}  
+
+else if (contador==2) {
+    pergunta.innerHTML= listaPerg[0 + contador]
+   
+} 
+
+else{
+    pergunta.innerHTML= listaPerg[0 + contador]
 }
 
-else {
-    contador=1;
-    pergunta.innerHTML= listaPerg[0 + contador]
-    contador ++
-} }
+}
+
+}
     
 
 </script>
