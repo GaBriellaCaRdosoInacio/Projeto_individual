@@ -16,6 +16,7 @@ a{
 }
 
 
+
 /* header */
 
 
@@ -220,7 +221,7 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #A138BF;
+  background-color: #D352F8;
   height: 90%;
   width: 100%;
 }
