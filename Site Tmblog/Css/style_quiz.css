@@ -24,7 +24,6 @@
   position: absolute;
   margin-left: 615px;
   font-family: 'Times New Roman', Times, serif;
-  /* cursor: pointer; */
 }
 
 .quiz .lista-perguntas{
@@ -46,6 +45,7 @@
   border-color: purple;
   background-color: #dbb6d7;
   height: 40px;
+  font-weight: bold;
 }
 
 .quiz .inptn {
@@ -58,4 +58,20 @@
   border-color: purple;
   background-color: #dbb6d7;
   height: 40px;
+  font-weight: bold;
+}
+
+.quiz .input {
+  margin-top:-410px;
+  line-height: 80px;
+  position: absolute;
+  margin-left: 530px;
+  width: 300px;
+  border-radius: 30px;
+  border-color: purple;
+  background-color: #dbb6d7;
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  
 }
