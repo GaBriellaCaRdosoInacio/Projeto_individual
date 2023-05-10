@@ -1,0 +1,52 @@
+a{
+    text-decoration: none;
+    color: black;
+  }
+
+body{
+    background-color: #ECCBF6;
+}
+
+.nav{
+    margin-top: 50px;
+}
+
+.card{
+    background-color: white;
+    width: 1240px;
+    height: 150px;
+    margin-left: 50px;
+    border-radius: 100px;
+    
+}
+
+.card .menu #menu{
+    width: 100px;
+    height: 100px;
+    margin-left: 1050px;
+  }  
+
+.menu_resp{
+    background-color: #A138BF; 
+    margin-left: 1149px;
+    top: 120px; 
+    width: 200px; 
+    height: 220px;
+    float: none;
+    font-weight: bold;
+    position: absolute;
+  }
+  
+  li{
+    font-size: 22px;
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    line-height: 42px;
+  }
+
+  .header .menu #menu{
+    width: 60px;
+    height: 60px;
+  }

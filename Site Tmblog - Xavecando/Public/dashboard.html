@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/style_dash.css">
+
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="nav">
+        <div class="card">
+            <img id="icon_card" src=" ">
+            <button onclick="limparSessao()">Sair</button>
+            <div class="menu">
+                <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+    <!-- fim do header -->
+
+    <!-- corpo do dash -->
+    <div class="corpo">
+    <h1>Bem vindo a minha área Dashboard do Quiz</h1>
+        <div id="mensagem"></div>
+    <div class="dash">
+        <div id="kpi1"></div>
+        <div id="kpi2"></div>
+        <div id="kpi3"></div>
+        <div id="kpi4"></div>
+
+    <div class="resposta-dash"></div>
+
+        <!-- O CHART FICA AQUI -->
+
+    <img src="../img/xaveco_tracejado.png">
+
+    </div>
+    </div>
+
+    <!-- fim do corpo do dash -->
+
+
+
+</body>
+</html>
+
+<script>
+
+//variaveis globais 
+var contador= 0;
+
+//funcoes do menu de nav
+function clickmenu() {
+contador+=1
+
+if(contador>0){
+if(contador==1){
+    mensagem.innerHTML= `<ul class="menu_resp"> 
+        <li><a href="https://www.google.com.br/?gws_rd=cr">Cadastro</a></li>
+        <li><a href=" ">Login</a></li>
+        <li><a href="cadastro.html">Quiz</a></li>
+        <li><a href=" ">Ajuda</a></li>
+        <li><a href=" ">Curiosidade</a></li></ul>
+`
+} else {
+    mensagem.innerHTML= ' ';
+    contador=0
+}
+} 
+} 
+
+</script>
