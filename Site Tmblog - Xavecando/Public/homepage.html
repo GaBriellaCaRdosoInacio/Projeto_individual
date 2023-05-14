@@ -11,21 +11,21 @@
 </head>
 <body>
     
-
-    <!-- inicio header -->
-    <div class="header" style="background-color: #D352F8;"> 
-    <div class="container">
-    <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
-    <div class="texto"> Home
-    </div>
-    <div class="menu">
-        <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
-    </div>
-    </div> </div>
-    <!-- fim do header -->
-        
-        <!-- inicio do banner -->
-        <div class="banner">
+    <div class="siteTodo">
+        <div class="transparencia">
+        <!-- inicio header -->
+        <div class="header"> 
+        <div class="container">
+        <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
+        <div class="menu">
+            <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
+        </div>
+        </div> 
+        </div>
+            <!-- fim do header -->
+            
+            <!-- inicio do banner -->
+            <div class="banner">
             <div class="atalho_quiz">
                 <ul>
                 <li><h1>Teste de personalidade: descubra quanto o Xaveco te representa</h1></li>
@@ -35,39 +35,44 @@
             </div>
             <div id="mensagem"></div>
             <div class="xaveco_img">
-                <div class="fundo_roxo">
-                    <img src="../img/fundoRoxo.png">
-                </div>
                 <div class="xaveco">
-                    <img src="../img/xaveco patos-removebg-preview.png">
+                    <img src="../img/xaveco_espelho.png">
                 </div>
             </div>  
-        </div>
+        
         <!-- fim do banner -->
 
         <!-- inicio do sobre-->
 
         
         <div class="card">
-            <div class="tracejado"> <img src="../img/xaveco_tracejado.png"></div>
-            <div class="balao"><img src="../img/balao_sobre_nos.PNG"></div>
-            <span>Olá bem vindos ao Tmblog xavecando, um blog voltado para o personagem 
-                Xaveco da Turma da Mônica, aqui você encontra todas as informações sobre ele.
-            </span>
-            <div class="esconder"> </div>
+            <div class="gif"> <img src="../img/gif_monica-sobre.gif" width="auto" height="450"></img></div>
+            <span>Olá bem vindos ao TM blog
+                xavecando, um blog voltado para
+                a Turma da Mônica e o
+                personagem Xaveco. Aqui você
+                encontra diversas informações sobre essa galerinha.
             </div>
-
+        </div>
+    
         <!-- fim do sobre -->
         
 
         <!-- inicio do footer -->
             <div class="footer">
-                <div class="logo2"><img src="../img/logo2_tmblog.png"></div>
-            <div id="listf"></div>
-            <div class="retrato"> <img onclick="contato()" src="../img/foto_footer.jpg">
+          <div class="transparenciaF">
+                <div class="logo2"><img src="../img/logo_tmblog-removebg-preview.png"></div>
+                <div id="listf">
+                <ul><li> <img src=""> </li>
+                <li> <img src=""> </li>
+                <li> <img src=""> </li></ul>
+                </div>
+
+            </div>
             </div>
             </div>
         <!-- fim do footer -->
+    </div>
 </body>
 </html>
 
@@ -91,24 +96,6 @@ if(contador==1){
 `
 } else {
     mensagem.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
-
-function contato() {
-contador+=1
-
-if(contador>0){
-if(contador==1){
-    listf.innerHTML= `<ul class="list-footer">
-                <li><h3>Contato</h3></li>
-                <li><a href=" ">E-mail</a></li>
-                <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
-                <li><a href=" "></a></li>
-                </ul>`
-} else {
-    listf.innerHTML= ' ';
     contador=0
 }
 } 
