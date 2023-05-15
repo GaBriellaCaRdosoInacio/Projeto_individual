@@ -24,6 +24,7 @@ body{
 a{
   text-decoration: none;
   color: black;
+  width: auto;
 }
 
 
@@ -227,22 +228,35 @@ margin-right: 100px;
   justify-content: center;
 }
 
-.listf span{
+.listf span {
 font-family: 'Roboto Mono', monospace;
 letter-spacing: 10px;
 font-size: 30px;
 position: absolute;
-margin-top: 20px;
-margin-left: 60px;
+margin-top: 40px;
+margin-left: 80px;
 }
 
-.listf ul li{
+.listf{
+  display: flex;
   list-style: none;
 }
 
-.listf ul li img{
-  height: 40px;
-  display: flex;
-  flex-direction: row;
+.listf .email{
+  font-size: 40px;
+  margin-top: 80px;
 
+}
+
+.listf img{
+  height: 40px;
+  margin-top: 80px;
+  display: flex;
+
+}
+
+.itens-lista{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }

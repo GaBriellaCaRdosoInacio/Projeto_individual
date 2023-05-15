@@ -5,47 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz - tmblog</title>
-    <link rel="stylesheet" href="../Css/style_geral.css">
+    <script src="../Js/pergunta-quiz.js"></script>
     <link rel="stylesheet" href="../Css/style_quiz.css">
+    <link rel="stylesheet" href="../Css/style_geral.css">
     <link rel="shortcut icon" href="../img/logo-aba-site.png" type="image/x-icon">
 
 </head>
 <body>
     
-    <!-- inicio header -->
- <div class="header" style="background-color: #D352F8;"> 
-    <div class="container">
-    <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
-    <div class="texto"> Quiz
-    </div>
-    <div class="menu">
-        <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
-    </div>
-    </div> </div>
-    <!-- fim do header -->
-
-    <!-- inicio form quiz -->
-    <div class="quiz">
-        <div class="fundo_form">
-            <img src="../img/fundo-form.png">
+    <div class="siteTodo">
+        <div class="transparencia">
+        <!-- inicio header -->
+        <div class="header"> 
+        <div class="container">
+        <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
+        <div class="menu">
+            <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
         </div>
-         <h1>QUIZ</h1>
-        <div id="mensagem"></div>
-        <div id="pergunta" class="lista-perguntas"> 1- Você considera sua imaginação fértil?</div>
-        <input class="inpts"id="inpt_sim" type="button" value="a) SIM">
-        <input class= "inptn" id="inpt_nao" type="button" value="b) NÃO">
-        <button onclick="proximo()">Próximo</button>
-    </div>
-    <!-- fim do form quiz -->
+        </div> 
+        </div>
+            <!-- fim do header -->
+            
+            <!-- inicio do quiz -->
+            <div class="quiz">
+                <div class="card-quiz">
+                <div id="pergunta"></div>
+                <select name="resposta" id="alternativas">
+                    <option value="-">-</option>
+                    <option value="sim">a) Sim</option>
+                    <option value="nao">b) Não</option>
+                </select>
+            </div>
+            </div>
+        
+        
+        <!-- fim do quiz -->
+        
 
-    <!-- inicio do footer -->
-    <div class="footer">
-        <div class="logo2"><img src="../img/logo2_tmblog.png"></div>
-    <div id="listf"></div>
-    <div class="retrato"> <img onclick="contato()" src="../img/foto_footer.jpg">
+        <!-- inicio do footer -->
+        <div class="transparenciaF">
+        <div class="footer">
+                <div class="cardF">
+                <div class="logo2"><img src="../img/logo_tmblog-removebg-preview.png"></div>
+                <div class="listf">
+                <span>CONTATO</span>
+               
+                <div class="itens-lista">
+               <a href="https://github.com/GaBriellaCaRdosoInacio"><img src="../img/github_icon.png"></a>
+               <a href="https://instagram.com/gabi_inacio_11?igshid=NTc4MTIwNjQ2YQ=="><img src="../img/instagram.png"></a>
+               <a href="mailto:gabriella.inacio@sptech.school"><div class="email">@</div></a>
+            </div>
+                <div id="copy">Copyright © 2023 - All Rights Reserved - Tmblog Xavecando</div>
+
+                </div>
+
+            </div>
+            </div>
+         </div>
+            </div>
+        <!-- fim do footer -->
     </div>
-    </div>
-<!-- fim do footer -->
+   
 
 </body>
 </html>
@@ -75,48 +95,10 @@ if(contador==1){
 } 
 } 
 
-//funcao do contato
-function contato() {
-contador+=1
 
-if(contador>0){
-if(contador==1){
-    listf.innerHTML= `<ul class="list-footer">
-                <li><h3>Contato</h3></li>
-                <li><a href="gabriella.inacio@sptech.school">E-mail</a></li>
-                <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
-                <li><a href=" "></a></li>
-                </ul>`
-} else {
-    listf.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
 
 // quiz
 
-
-function proximo(){
-    pergunta.innerHTML= ' ';
-    var listaPerg= ["2- Você se considera uma pessoa que atrai sorte?", "3- Se um amigo seu está com problemas, você tentaria diversas coisas para poder ajuda-lo?", "4- Você tenta ser positivo mediante as dificuldades?", "5- Sua família é caótica?"];
-    contador+=1
-
-    if(contador==1){
-    pergunta.innerHTML= listaPerg[listaPerg[0]];
-   
-}  
-
-else if (contador==2) {
-    pergunta.innerHTML= listaPerg[0 + contador]
-   
-} 
-
-else{
-    pergunta.innerHTML= listaPerg[0 + contador]
-}
-
-}
 
 
     

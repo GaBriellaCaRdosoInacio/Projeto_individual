@@ -12,40 +12,7 @@
 </head>
 <body>
     
-    <!-- inicio header -->
- <div class="header" style="background-color: #D352F8;"> 
-    <div class="container">
-    <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
-    <div class="texto"> Login
-    </div>
-    <div class="menu">
-        <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
-    </div>
-    </div> </div>
-    <!-- fim do header -->
 
-    <!-- inicio form quiz -->
-    <div class="quiz">
-        <div class="fundo_form">
-            <img src="../img/fundo-form.png">
-        </div>
-         <h1>LOGIN</h1>
-        <div id="mensagem"></div>
-      <span id="email">E-mail: </span> <input class="input"id="inpt_email" type="email" placeholder="Insira seu E-mail">
-      <span id="senha"> Senha: </span><input class= "input" id="inpt_senha" type="password" placeholder="Insira sua senha">
-      <span id="cadastre"><a href="cadastro.html" style="color: #240b2b;">Não possui uma conta? Cadastre-se</a></span>
-        <button><a href="quiz.html" style="color: white;">Entrar</a></button>
-    </div>
-    <!-- fim do form quiz -->
-
-    <!-- inicio do footer -->
-    <div class="footer">
-        <div class="logo2"><img src="../img/logo2_tmblog.png"></div>
-    <div id="listf"></div>
-    <div class="retrato"> <img onclick="contato()" src="../img/foto_footer.jpg">
-    </div>
-    </div>
-<!-- fim do footer -->
 
 </body>
 </html>
@@ -75,23 +42,6 @@ if(contador==1){
 } 
 } 
 
-//funcao do contato
-function contato() {
-contador+=1
 
-if(contador>0){
-if(contador==1){
-    listf.innerHTML= `<ul class="list-footer">
-                <li><h3>Contato</h3></li>
-                <li><a href="gabriella.inacio@sptech.school">E-mail</a></li>
-                <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
-                <li><a href=" "></a></li>
-                </ul>`
-} else {
-    listf.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
 
 </script>

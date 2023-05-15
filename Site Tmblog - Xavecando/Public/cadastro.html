@@ -11,42 +11,7 @@
 
 </head>
 <body>
-    <div class="siteTodo">
-    <!-- inicio header -->
- <div class="header" style="background-color: #D352F8;"> 
-    <div class="container">
-    <div class="logo"><img id="logo1" src="../img/logo_tmblog-removebg-preview.png"></div>
-    <div class="texto"> Cadastro
-    </div>
-    <div class="menu">
-        <img onclick="clickmenu()" id="menu" src="../img/menu_icon.png" style="cursor: pointer;">
-    </div>
-    </div> </div>
-    <!-- fim do header -->
-
-    <!-- inicio form quiz -->
-    <div class="quiz">
-        <div class="fundo_form">
-            <img src="../img/fundo-form.png">
-        </div>
-         <h1 style="margin-left: 585px;">CADASTRO</h1>
-        <div id="mensagem"></div>
-      <span id="nome">Nome: </span> <input class="input"id="inpt_nome" type="email" placeholder="Insira seu nome">
-      <span id="email2"> Email: </span><input class= "input" id="inpt_email2" type="password" placeholder="Insira seu e-mail">
-      <span id="senha2"> Senha: </span><input class= "input" id="inpt_senha2" type="password" placeholder="Insira sua senha">
-        <button id="cadastro"><a href="quiz.html" style="color: white;">Cadastre-se</a></button>
-    </div>
-    <!-- fim do form quiz -->
-
-    <!-- inicio do footer -->
-    <div class="footer">
-        <div class="logo2"><img src="../img/logo2_tmblog.png"></div>
-    <div id="listf"></div>
-    <div class="retrato"> <img onclick="contato()" src="../img/foto_footer.jpg">
-    </div>
-    </div>
-<!-- fim do footer -->
-</div>
+    
 </body>
 </html>
 
@@ -74,24 +39,4 @@ if(contador==1){
 }
 } 
 } 
-
-//funcao do contato
-function contato() {
-contador+=1
-
-if(contador>0){
-if(contador==1){
-    listf.innerHTML= `<ul class="list-footer">
-                <li><h3>Contato</h3></li>
-                <li><a href="gabriella.inacio@sptech.school">E-mail</a></li>
-                <li><a href="https://github.com/GaBriellaCaRdosoInacio">Github</a></li>
-                <li><a href=" "></a></li>
-                </ul>`
-} else {
-    listf.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
-
 </script>
