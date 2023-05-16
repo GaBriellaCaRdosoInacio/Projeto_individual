@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family= Roboto +Mono:wght@300 & display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family= Roboto +Mono:wght@300 & display=swap'); */
 
 *{
     margin: 0;
@@ -68,7 +68,7 @@ a{
 
 .menu_resp{
   background-color: rgba(255, 255, 255, 0.89); 
-  margin-left: 1021px;
+  margin-left: 1149px;
   top: 120px; 
   width: 200px; 
   height: 220px;
@@ -242,13 +242,13 @@ margin-left: 80px;
   list-style: none;
 }
 
-.listf .email{
+.itens-lista .email{
   font-size: 40px;
   margin-top: 80px;
 
 }
 
-.listf img{
+.itens-lista img{
   height: 40px;
   margin-top: 80px;
   display: flex;
@@ -259,4 +259,17 @@ margin-left: 80px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 2%;
+  margin-left: 70px;
+  margin-top: 12px;
+
+}
+
+.card-quiz #nome_input{
+  background-color: white;
+  color: black;
+  width: 300px;
+  border-radius: 30px;
+  height: 30px;
+  border-style: none;
 }

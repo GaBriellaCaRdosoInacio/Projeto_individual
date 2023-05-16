@@ -7,6 +7,8 @@
     <title>home - tmblog</title>
     <link rel="stylesheet" href="../Css/style_geral.css">
     <link rel="shortcut icon" href="../img/logo-aba-site.png" type="image/x-icon">
+    <script src="./js/funcoes.js"></script>
+    <script src="../Js/menu.js"></script>
 
 </head>
 <body>
@@ -64,7 +66,7 @@
                 <div class="logo2"><img src="../img/logo_tmblog-removebg-preview.png"></div>
                 <div class="listf">
                 <span>CONTATO</span>
-               
+                </div>
                 <div class="itens-lista">
                <a href="https://github.com/GaBriellaCaRdosoInacio"><img src="../img/github_icon.png"></a>
                <a href="https://instagram.com/gabi_inacio_11?igshid=NTc4MTIwNjQ2YQ=="><img src="../img/instagram.png"></a>
@@ -85,28 +87,7 @@
 
 <script>
 
-//variaveis globais 
-var contador= 0;
 
-//funcoes do menu de nav
-function clickmenu() {
-contador+=1
-
-if(contador>0){
-if(contador==1){
-    mensagem.innerHTML= `<ul class="menu_resp"> 
-        <li><a href="https://www.google.com.br/?gws_rd=cr">Cadastro</a></li>
-        <li><a href=" ">Login</a></li>
-        <li><a href="cadastro.html">Quiz</a></li>
-        <li><a href=" ">Imagens</a></li>
-        <li><a href=" ">Curiosidade</a></li></ul>
-`
-} else {
-    mensagem.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
 
 
 </script>

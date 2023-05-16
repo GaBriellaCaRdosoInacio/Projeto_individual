@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../Css/style_quiz.css">
     <link rel="stylesheet" href="../Css/style_geral.css">
     <link rel="shortcut icon" href="../img/logo-aba-site.png" type="image/x-icon">
+    <script src="../Js/menu.js"></script>
+    <script src="../Js/funcoes.js"></script>
+
 
 </head>
 <body>
@@ -30,14 +33,12 @@
             <div class="quiz">
                 <div class="card-quiz">
                 <div id="pergunta"></div>
-                <select name="resposta" id="alternativas">
-                    <option value="-">-</option>
-                    <option value="sim">a) Sim</option>
-                    <option value="nao">b) Não</option>
-                </select>
+                <input type="radio" name="resposta" id="A">a) Sim
+                <input type="radio" name="resposta" id="B">b) Não
             </div>
+            <div id="mensagem"></div>
             </div>
-        
+            <button onclick="proximo()">Próximo</button>
         
         <!-- fim do quiz -->
         
@@ -71,34 +72,6 @@
 </html>
 
 <script>
-
-//variaveis globais 
-var contador= 0;
-
-//funcoes do menu de nav
-function clickmenu() {
-contador+=1
-
-if(contador>0){
-if(contador==1){
-    mensagem.innerHTML= `<ul class="menu_resp"> 
-        <li><a href="https://www.google.com.br/?gws_rd=cr">Cadastro</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="homepage.html"> Home</a></li>
-        <li><a href=" ">Ajuda</a></li>
-        <li><a href=" ">Curiosidade</a></li></ul>
-`
-} else {
-    mensagem.innerHTML= ' ';
-    contador=0
-}
-} 
-} 
-
-
-
-// quiz
-
 
 
     
