@@ -7,4 +7,5 @@ function proximo(){
     pergunta.innerHTML= listaPerg[contadorP];
 }
 contadorP++;
+
 }

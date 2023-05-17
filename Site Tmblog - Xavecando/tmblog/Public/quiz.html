@@ -30,15 +30,24 @@
             <!-- fim do header -->
             
             <!-- inicio do quiz -->
-            <div class="quiz">
+            <div class="quiz"> 
                 <div class="card-quiz">
                 <div id="pergunta"></div>
-                <input type="radio" name="resposta" id="A">a) Sim
-                <input type="radio" name="resposta" id="B">b) Não
+                    <div class="alternativas">
+                <ul class="alt">
+                    <li>a) Sim</li>
+                    <li>b) Não</li>
+                </ul>
+                <input type="radio" name="resposta" id="A">
+                <input type="radio" name="resposta" id="B">
+
+                    </div>
             </div>
             <div id="mensagem"></div>
             </div>
             <button onclick="proximo()">Próximo</button>
+
+            <div id="pontuacao"></div>
         
         <!-- fim do quiz -->
         
