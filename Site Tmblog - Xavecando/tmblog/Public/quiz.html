@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Css/style_geral.css">
     <link rel="shortcut icon" href="../img/logo-aba-site.png" type="image/x-icon">
     <script src="../Js/menu.js"></script>
-    <script src="../Js/funcoes.js"></script>
+    <!-- <script src="../Js/funcoes.js"></script> -->
 
 
 </head>
@@ -32,20 +32,20 @@
             <!-- inicio do quiz -->
             <div class="quiz"> 
                 <div class="card-quiz">
+                    <h1>Olá usuário, bem vindo a área do Quiz!!</h1>
+                    <span>Clique no botão de prosseguir para iniciar o teste</span>
                 <div id="pergunta"></div>
-                    <div class="alternativas">
-                <ul class="alt">
-                    <li>a) Sim</li>
-                    <li>b) Não</li>
-                </ul>
-                <input type="radio" name="resposta" id="A">
-                <input type="radio" name="resposta" id="B">
-
+                    <div class="select">
+                            <select>
+                        <option class="option-teste">-- Escolha uma alternativa --</option>
+                        <option class="option-teste" value="A">a) Sim</option>
+                        <option class="option-teste" value="B">b) Não</option>
+                            </select>
                     </div>
             </div>
             <div id="mensagem"></div>
             </div>
-            <button onclick="proximo()">Próximo</button>
+            <button onclick="proximo()">Prosseguir</button>
 
             <div id="pontuacao"></div>
         

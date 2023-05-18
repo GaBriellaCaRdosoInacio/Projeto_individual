@@ -8,4 +8,8 @@ function proximo(){
 }
 contadorP++;
 
+if(contadorP==6){
+    window.location.assign("../Public/homepage.html");
+}
+
 }

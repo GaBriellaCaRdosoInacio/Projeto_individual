@@ -53,19 +53,12 @@
   font-size: 25px;
 }
 
-.alternativas{
-  margin-top: 10px;
-
-}
-
-.card-quiz .alternativas input{
-  height: 18px;
-}
-
-.card-quiz .alternativas #A{
-  margin-top: 20px;
-}
-
-.alt{
-
+button {
+  background-color: #675097;
+  width: 150px;
+  height: 38px;
+  border-radius: 20px;
+  border: none;
+  font-size: 21px;
+  color: white;
 }

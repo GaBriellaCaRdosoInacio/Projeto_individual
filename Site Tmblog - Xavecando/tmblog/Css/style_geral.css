@@ -445,3 +445,42 @@ font-weight: bold;
 }
 
 /* fim do modelo padrao */
+
+
+/* estilizacao do select */
+
+select{
+  overflow: hidden;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  border: 3px solid #675097;
+  border-radius: 5px;
+  height: 40px;
+  width: auto;
+}
+
+select:hover{
+border-color: black;
+
+}
+
+select:hover:active{
+  border-color:  rgb(117, 92, 207);
+  color: #3b3283  
+}
+
+option{
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+
+.option-teste{
+  border: 2px solid #675097;
+  background-color: white;
+  color: black;
+}  
