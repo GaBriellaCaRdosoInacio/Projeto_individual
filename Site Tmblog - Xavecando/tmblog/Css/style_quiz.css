@@ -42,7 +42,7 @@
 .quiz .lista-perguntas{
   font-weight: bold;
   position: absolute;
-  margin-top:-550px;
+  margin-top:-520px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   margin-left: 500px;
@@ -50,10 +50,10 @@
 
 .card-quiz #pergunta{
   margin-left: 30px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-button {
+.prosseguir button {
   background-color: #675097;
   width: 150px;
   height: 38px;
@@ -61,4 +61,42 @@ button {
   border: none;
   font-size: 21px;
   color: white;
+  margin-top: -180px;
+  position: absolute;
+  margin-left: 595px;
+}
+
+ #validar{
+  background-color: #675097;
+  width: 150px;
+  height: 38px;
+  border-radius: 20px;
+  border: none;
+  font-size: 21px;
+  color: white;
+  margin-top: -180px;
+  position: absolute;
+  margin-left: 100px;
+}
+
+
+.card-quiz #oi{
+  width: 300px;
+  z-index: 1;
+  margin-left: 4px;
+  font-size: 40px;
+  padding-left: 3px;
+    text-align: center;  
+
+}
+
+.card-quiz #clique{
+  z-index: 1;
+  position: absolute;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-top: 80px;
+  width: 250px;
+  text-align: center;  
+
 }
