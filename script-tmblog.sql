@@ -9,31 +9,24 @@ email varchar(50),
 senha char(8) 
 );
 
-create table quiz_pergunta(
-idpergnt int primary key auto_increment,
-pergunta int
+
+select * from usuario;
+
+create table preQuiz(
+fkusuario int,
+tempo int,
+constraint fkusuario foreign key (fkusuario) references usuario(iduser)
 );
 
-create table quiz_resposta(
-idresp int primary key auto_increment,
-resposta int,
-constraint chkresposta check(resposta in ('0', '1' ))
-);
-
-create table resultado_quiz(
-fkpergunta int,
-constraint fkpergunta foreign key (fkpergunta)
-references quiz_pergunta (idpergnt),
-fkresposta int,
-constraint fkresposta foreign key (fkresposta)
-references quiz_resposta (idresp),
-constraint pkcomposta primary key (fkpergunta,fkresposta),
+create table resultadoFinal(
+acertos int,
+erros int,
 fkuser int,
 constraint fkuser foreign key (fkuser)
-references usuario (iduser),
-porcento_xaveco int
+references usuario (iduser)
 );
 
+select * from resultadoFinal;
 
-
+SELECT * FROM preQuiz;
 
